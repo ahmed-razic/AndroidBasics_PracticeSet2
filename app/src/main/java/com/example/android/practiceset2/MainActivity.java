@@ -13,11 +13,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
 
-        display1("This is Box 1.");
+/*      display1("This is Box 1.");
         display2("And this is Box 2.");
-        display3("And look! Box 3!");
+        display3("And look! Box 3!");*/
+
+/*      int raspberryPrice = 5;
+        display1("1 box: $" + raspberryPrice);
+        raspberryPrice = 10;
+        display2("2 boxes: $" + (raspberryPrice));
+        display3("3 boxes: $" + (raspberryPrice * 3));*/
+
+
+        display1("My first text.");
+        display2("And second.");
+        display3("And third, finally.");
+
+
+
+        int priceOfOneItem = 5;
+
+        display1("One item costs $" + priceOfOneItem);
+        priceOfOneItem = 10;
+        display2("Two items cost $" + priceOfOneItem);
+        display3("Three items cost $" + (3 * priceOfOneItem));
+
+        display4(10);
 
     }
+
+
 
     /**
      * Display methods that allow the text to appear on the screen. Don't worry if you don't know
@@ -31,10 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void display(int text) {
         TextView t = (TextView) findViewById(R.id.display_text_view);
-        t.setText(text + "");
+        t.setText("This is an integer input: " + text + "");
     }
 
     public void display1(String text) {
+        display(text);
+    }
+
+    public void display4(int text) {
         display(text);
     }
 
@@ -48,3 +76,5 @@ public class MainActivity extends AppCompatActivity {
         t.setText(text);
     }
 }
+
+
