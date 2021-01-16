@@ -46,10 +46,18 @@ public class MainActivity extends AppCompatActivity {
         string currentPlaying = "Fantasy -- Alina Baraz & Galimatias";
         String currentPlaying = "Call Me Up -- Chromeo"*/
 
-        int day1 = 15;
+
+        /*int day1 = 15;
         int day2 = 22;
         int day3 = 18;
-        display((day1 + day2 + day3) / 3);
+        display((day1 + day2 + day3) / 3);*/
+
+        String firstName = "Lyla";
+        String lastName = "Fujiwara";
+        String contactInfo = firstName + " " + lastName;
+        contactInfo = contactInfo + "<" + lastName + "." + firstName + "@justjava.com>";
+        display(contactInfo);
+
 
 
 
