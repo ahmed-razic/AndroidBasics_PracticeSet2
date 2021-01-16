@@ -23,21 +23,39 @@ public class MainActivity extends AppCompatActivity {
         display2("2 boxes: $" + (raspberryPrice));
         display3("3 boxes: $" + (raspberryPrice * 3));*/
 
-
-        display1("My first text.");
-        display2("And second.");
-        display3("And third, finally.");
-
-
-
-        int priceOfOneItem = 5;
+/*      int priceOfOneItem = 5;
 
         display1("One item costs $" + priceOfOneItem);
         priceOfOneItem = 10;
         display2("Two items cost $" + priceOfOneItem);
         display3("Three items cost $" + (3 * priceOfOneItem));
 
-        display4(10);
+        display4(10);*/
+
+
+
+       /* display1("My first text.");
+        display2("And second.");
+        display3("And third, finally.");
+
+        int integer;
+        int int;
+        integer number;
+
+        String currentPlaying = "Pinocchio -- Penguin Prison;
+        string currentPlaying = "Fantasy -- Alina Baraz & Galimatias";
+        String currentPlaying = "Call Me Up -- Chromeo"*/
+
+        int day1 = 15;
+        int day2 = 22;
+        int day3 = 18;
+        display((day1 + day2 + day3) / 3);
+
+
+
+
+
+
 
     }
 
