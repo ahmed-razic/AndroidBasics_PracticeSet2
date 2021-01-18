@@ -2,7 +2,9 @@ package com.example.android.practiceset2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,9 +13,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         // PASTE CODE YOU WANT TO TEST HERE
 
-/*      display1("This is Box 1.");
+/*
+
+        TextView myTextView = new TextView(this);
+        myTextView.setText("Hello!");
+        myTextView.setTextSize(56);
+        myTextView.setTextColor(Color.GREEN);
+        setContentView(myTextView);
+
+
+        display1("This is Box 1.");
         display2("And this is Box 2.");
         display3("And look! Box 3!");*/
 
@@ -52,19 +65,11 @@ public class MainActivity extends AppCompatActivity {
         int day3 = 18;
         display((day1 + day2 + day3) / 3);*/
 
-        String firstName = "Lyla";
+/*        String firstName = "Lyla";
         String lastName = "Fujiwara";
         String contactInfo = firstName + " " + lastName;
         contactInfo = contactInfo + "<" + lastName + "." + firstName + "@justjava.com>";
-        display(contactInfo);
-
-
-
-
-
-
-
-
+        display(contactInfo);*/
     }
 
 
@@ -75,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void display(String text) {
-        TextView t = (TextView) findViewById(R.id.display_text_view);
+        TextView t = findViewById(R.id.display_text_view);
         t.setText(text);
     }
 
     public void display(int text) {
-        TextView t = (TextView) findViewById(R.id.display_text_view);
+        TextView t = findViewById(R.id.display_text_view);
         t.setText("This is an integer input: " + text + "");
     }
 
